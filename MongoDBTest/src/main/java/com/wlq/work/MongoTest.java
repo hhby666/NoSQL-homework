@@ -7,8 +7,6 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 
-import java.util.List;
-
 /**
  * program: homework
  * <br>description: MongoDB测试
@@ -18,7 +16,7 @@ import java.util.List;
  */
 public class MongoTest {
     public static void main(String[] args) {
-        String uri = "mongodb://rw:rw@hhby.xyz:27017/?authSource=mongodbStudy";
+        final String uri = "mongodb://rw:rw@hhby.xyz:27017/?authSource=mongodbStudy";
         try {
             MongoClientURI mongoClientURI = new MongoClientURI(uri);
             MongoClient mongoClient = new MongoClient(mongoClientURI);
@@ -32,6 +30,5 @@ public class MongoTest {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }
