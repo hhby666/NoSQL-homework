@@ -10,6 +10,7 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>MongoDBTest</module>
+    <module>RedisTest</module>
   </modules>
 
   <name>homework</name>
